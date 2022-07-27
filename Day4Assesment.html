@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Canvas and Datalists</title>
+</head>
+<body>       
+<p>CANVAS TAD</p>
+<canvas id="canvasid" width="600" height="300" style="border:15px solid;color:blue;background:red">
+
+</canvas>
+<script>
+var cvar = document.getElementById("canvasid");
+var cvarContext = cvar.getContext("2d");
+//cvarContext.addcolor("#3FFF33");
+cvarContext.fillStyle = "green";    
+//cvarContext.fillstyle="#3FFF33";
+cvarContext.fillRect(150,100,300,100);
+</script>
+
+<h1>DataList and Colors style</h1>
+<label for="browser">Choose your Fav color from the list:</label>
+<input list="Datalists" name="datalis" id="datalis">
+<datalist id="Datalists">
+<option value="Green">
+<option value="Blue">
+<option value="Black">
+<option value="Yellow">
+<option value="Pink">
+</datalist>
+
+</body>
+</html>
